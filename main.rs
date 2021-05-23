@@ -6,6 +6,7 @@ struct Aliment{
 }
 
 fn main() {
+	read_calories_from_keybord();
 	let mut v: Vec<Aliment> = Vec::new();
 	let apple=Aliment { name: String::from("apple"), kal:55,};
 	let orange=Aliment { name: String::from("orange"), kal:60,};
@@ -27,9 +28,6 @@ fn main() {
 		println!("Numele alimentului {}",v[n].name);
 		
 	}
-    
-	//read_calories_from_keybord();
-	
 }
 
 fn read_calories_from_keybord(){
