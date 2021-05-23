@@ -18,16 +18,20 @@ fn main() {
 	v.push(juice);
 	let mut n=v.len();
 	println!("{}",n);
-	let mut i=0;
+	//let mut i=0;
 	
-	 while i<2{ 
-		let mut indx1={ let i=i;
-						i+1};
-		let mut indx2={ let n=v.len();
-						n-1};
-		println!("Numele alimentului {}",v[n].name);
-		
+	for i in 0..n{
+		println!("Numele alimentului {}",v[i].name);
 	}
+	
+	// while i<2{ 
+		//let mut indx1={ let i=i;
+						//i+1};
+		//let mut indx2={ let n=v.len();
+						//n-1};
+		//println!("Numele alimentului {}",v[n].name);
+		
+	//}
 }
 
 fn read_calories_from_keybord(){
